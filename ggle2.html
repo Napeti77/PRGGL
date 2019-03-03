@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Google</title>
+    <style type="text/css">
+        .navigation{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navigation a{
+          color: rgba(0,0,0,0.87);
+        }
+        .navigation a:visited {
+            color: inherit;
+            text-decoration: underline;
+        }
+        .navigation a:hover {
+            color:inherit;
+            text-decoration: underline;
+        }
+        .navigation li {
+            list-style-type: none;
+            flex-basis: 5%;
+            padding-left: 5px;
+        }
+        .appi
+        {
+            opacity: .55;
+            position: absolute;
+            top: 13px;
+        }
+        .appi:hover{
+            opacity: 1;
+        }
+        .butti{
+            background-color: rgb(70, 131, 234);
+            color: rgb(255, 255, 255); 
+            font-weight: 700;
+            font-size:13px;
+            width: 95px;
+            height: 32px;
+            border-style: none;
+            position: relative;
+            top: -7px;
+            right:  27px;
+        }
+        .butti:hover{
+            box-shadow: 0 1px 0 rgba(0,0,0,.15);
+        }
+        
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'footer1 footer1 footer2 footer2';
+            grid-gap: 0px;
+            position: fixed;
+            left: 0;
+            bottom: -17px;
+            width: 100%;
+            height:90px;
+            background-color:#F2F0EC;
+            border-style: solid;
+            border-color:#E4E2DF;
+            border-width: 1px;
+        }
+        .item3{
+            grid-area: header;
+            color:rgba(0,0,0,.54);
+            position: relative;
+            left: 20px;
+            top: 10px;
+            
+        }
+        .foot1{
+            grid-area: footer1;
+            width:300px;
+            position: relative;
+            top: 5px;
+
+        }
+        .foot1 li{
+            float:left;
+            text-decoration: none;
+            list-style-type: none;
+            padding-left: 30px;
+            position: relative;
+            left: -50px;
+        }
+        .foot1 a{
+            text-decoration: none;
+            color:rgba(0,0,0,.54)
+        }
+        .foot1 a:hover{
+            text-decoration: underline;
+            color:inherit;
+        }
+        .foot1 a:visited{
+            text-decoration: none;
+            color:inherit;
+        }
+        .foot2{
+            grid-area: footer2;
+            width:300px;
+            position: relative;
+            top: 5px;
+        }
+        .foot2 li{
+            float:left;
+            list-style-type: none;
+            padding-left: 30px;
+            position: relative;
+            right: -300px;
+        }
+        .foot2 a{
+            text-decoration: none;
+            color:rgba(0,0,0,.54)
+        }
+        .foot2 a:hover{
+            text-decoration: underline;
+            color:inherit;
+        }
+        .foot2 a:visited{
+            text-decoration: none;
+            color:inherit;
+        }
+        .logo{
+           padding-top: 109px;
+           display: block;
+           margin-left: auto;
+           margin-right:auto;
+        }
+        .inp{
+            border-style: solid;
+            border-color: #DFE1E5;
+            border-radius: 50px;
+            width: 482px;
+            height:44px;
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            position: relative;
+            top: 18px;
+        }
+        input:focus{
+            outline: none;
+            padding-left: 20px;
+        }
+        input:hover{
+            box-shadow: 0px 2px 4px rgba(0,0,0,.15);
+        }
+        .button2 {
+            color:#5F6368;
+            background-color:#F2F2F2;
+            border-style:hidden;
+            border-radius:4px;
+            height:36px;
+            width:125px;
+            font-size:14px;
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            position:relative;
+            right: 60px;
+            top:36px;
+        }
+        .button2:hover{
+            border-style:solid;
+            border-width:1px;
+        }
+        .button3 {
+            color:#5F6368;
+            background-color:#F2F2F2;
+            border-style:hidden;
+            border-radius:4px;
+            height:36px;
+            width:125px;
+            font-size:14px;
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            position:relative;
+            left: 80px;
+        }
+        .button3:hover{
+            border-style:solid;
+            border-width:1px;
+        }
+    </style>
+</head>
+<body>
+    <div style="min-width: 960px; margin: 0 auto;">
+    <ul class=navigation>
+        <li><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+        <li><a href="https://www.google.pl/imghp?hl=pl&tab=ri">Grafika</a></li>
+        <li><a class="appi" href="https://www.google.pl/intl/pl/about/products?tab=wh"><img src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u" style="width:25px; height:25px" title="Google Apps" alt="Apps"></a></li>
+        <li><button class="butti" onclick="window.location.href = 'https://accounts.google.com/signin';">Zaloguj się</button>
+      </li>
+    </ul>
+    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="272" height="92">
+    <input type="text" class="inp" maxlength=2048>
+    <button class="button2" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
+    <button class="button3" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+    <div class=grid-container>
+        <ul class= foot1>
+            <li><a href="https://ads.google.com">Reklamuj się</a></li>
+             <li><a href="www.google.com/services">Dla firm </a></li>
+             <li><a href="about.google">O nas</a></li>
+        </ul>
+        <ul class= foot2>
+            <li><a href="policies.google.com/privacy">Prywatność</a></li>
+            <li><a href="policies.google.com">Warunki</a></li>
+            <li><a href="www.google.com/preferences">Ustawienia</a></li>
+        </ul>
+        <div class=item3>Polska</div>
+    </div>
+</body>
+</html>
