@@ -43,6 +43,37 @@
                 opacity: 1;
             }
 
+        .FA4 {
+            opacity: .55;
+            position: relative;
+            top: -26px;
+            right: -425px;
+        }
+
+            .FA4:hover {
+                opacity: 1;
+            }
+
+            .FA4 .tooltip4 {
+                visibility: hidden;
+                background-color: #2D2D2D;
+                color: white;
+                text-align: center;
+                line-height: 23px;
+                font-family: arial,sans-serif;
+                font-size: 11px;
+                width: 250px;
+                height: 25px;
+                position: absolute;
+                left: -115px;
+                top: 25px;
+                z-index: 1;
+            }
+
+            .FA4:hover .tooltip4 {
+                visibility: visible;
+            }
+
         .butti {
             background-color: rgb(70, 131, 234);
             color: rgb(255, 255, 255);
@@ -237,6 +268,11 @@
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="272" height="92">
         <div class="inputfield">
             <input type="text" class="inp" maxlength=2048>
+            <span class="FA4">
+                <i class="fas fa-keyboard">
+                    <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
+                </i>
+            </span>
         </div>
         <button class="button2" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
         <button class="button3" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
