@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css">
     <title>Google</title>
     <style type="text/css">
         .navigation {
@@ -245,49 +246,35 @@
             .inp:focus {
                 outline: none;
             }
-
-        .button2 {
+        .buttonMD1
+        {
+            position: relative;
+            right: -85px;
+        }
+         .buttonMD2
+        {
+             position: relative;
+             right: -255px;
+             top: -36px;
+        }
+        .mdc-button.foo-button
+        {
             color: #5F6368;
             background-color: #F2F2F2;
+            height: 36px;
+            width: 155px;
+            line-height: 27px;
             border-style: hidden;
             border-radius: 4px;
-            height: 36px;
-            width: 125px;
-            font-size: 14px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
             font-family: arial,sans-serif;
-            right: 60px;
-            top: 36px;
-        }
-
-            .button2:hover {
-                border-style: solid;
-                border-width: 1px;
-            }
-
-        .button3 {
-            color: #5F6368;
-            background-color: #F2F2F2;
-            border-style: hidden;
-            border-radius: 4px;
-            height: 36px;
-            width: 125px;
+            text-transform: none;
             font-size: 14px;
-            display: block;
-            font-family: arial,sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            left: 80px;
         }
-
-            .button3:hover {
-                border-style: solid;
-                border-width: 1px;
-            }
+       .mdc-button.foo-button:hover{
+           background-color: #F2F2F2;
+           border-style: solid;
+           border-width: 1px;
+       }
     </style>
 </head>
 <body>
@@ -313,12 +300,18 @@
             </span>
             <span class="FA3">
                 <i class="fas fa-microphone">
-                    <span class="tooltip3">Wyszukiwanie głosem</span>
+                    <span class="tooltip3">Wyszukiwanie głosowe</span>
                 </i>
             </span>
+            <div class="buttonMD1">
+                <button class="foo-button mdc-button" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
+            </div>
+            <div class="buttonMD2">
+                <button class="foo-button mdc-button" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+            </div>
         </div>
-        <button class="button2" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
-        <button class="button3" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+        
+
         <div class=grid-container>
             <ul class=foot1>
                 <li><a href="https://ads.google.com">Reklamuj się</a></li>
@@ -332,5 +325,7 @@
             </ul>
             <div class=item3>Polska</div>
         </div>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script src="ggle2.js"></script>
 </body>
 </html>
