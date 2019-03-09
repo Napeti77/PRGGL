@@ -43,6 +43,33 @@
                 opacity: 1;
             }
 
+        .FA3 {
+            color: #4285F4;
+            position: relative;
+            top: -26px;
+            right: -435px;
+        }
+
+            .FA3 .tooltip3 {
+                visibility: hidden;
+                background-color: #2D2D2D;
+                color: white;
+                text-align: center;
+                line-height: 23px;
+                font-family: arial,sans-serif;
+                font-size: 11px;
+                width: 200px;
+                height: 25px;
+                position: absolute;
+                left: -85px;
+                top: 25px;
+                z-index: 1;
+            }
+
+            .FA3:hover .tooltip3 {
+                visibility: visible;
+            }
+
         .FA4 {
             opacity: .55;
             position: relative;
@@ -271,6 +298,11 @@
             <span class="FA4">
                 <i class="fas fa-keyboard">
                     <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
+                </i>
+            </span>
+            <span class="FA3">
+                <i class="fas fa-microphone">
+                    <span class="tooltip3">Wyszukiwanie głosem</span>
                 </i>
             </span>
         </div>
