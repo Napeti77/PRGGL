@@ -232,20 +232,6 @@
             .inputfield:hover {
                 box-shadow: 0px 2px 4px rgba(0,0,0,.15);
             }
-
-        .inp {
-            position: relative;
-            display: block;
-            margin-left: auto;
-            margin-right: 85px;
-            border-style: none;
-            width: 355px;
-            height: 40px;
-        }
-
-            .inp:focus {
-                outline: none;
-            }
         .buttonMD1
         {
             position: relative;
@@ -275,6 +261,36 @@
            border-style: solid;
            border-width: 1px;
        }
+       .autocomplete-input{
+           position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: 85px;
+            border-style: none;
+            width: 355px;
+            height: 40px;
+       }
+        .autocomplete-input:hover {
+            outline: none;
+        }
+        .autocomplete-input:focus {
+            outline: none;
+        }
+        .autocomplete li{
+            list-style-type:none;
+        }
+        .autocomplete li:hover{
+            background-color:#EEEEEE;
+        }
+        .autocomplete ul{
+            border-style:groove;
+            border-radius: 25px;
+            max-height: 150px;
+            overflow:hidden; 
+            overflow-y:scroll;
+        }
+
+       
     </style>
 </head>
 <body>
@@ -289,28 +305,33 @@
         </ul>
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="272" height="92">
         <div class="inputfield">
-            <input type="text" class="inp" maxlength=2048>
-            <span class="FA2">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="FA4">
-                <i class="fas fa-keyboard">
-                    <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
-                </i>
-            </span>
-            <span class="FA3">
-                <i class="fas fa-microphone">
-                    <span class="tooltip3">Wyszukiwanie głosowe</span>
-                </i>
-            </span>
-            <div class="buttonMD1">
-                <button class="foo-button mdc-button" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
+            <div id="app">
+                <div class="container-item">
+                    <autocomplete/>
+                </div>
             </div>
-            <div class="buttonMD2">
-                <button class="foo-button mdc-button" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+                <span class="FA2">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="FA4">
+                    <i class="fas fa-keyboard">
+                        <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
+                    </i>
+                </span>
+                <span class="FA3">
+                    <i class="fas fa-microphone">
+                        <span class="tooltip3">Wyszukiwanie głosowe</span>
+                    </i>
+                </span>
+                <div class="buttonMD1">
+                    <button class="foo-button mdc-button" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
+                </div>
+                <div class="buttonMD2">
+                    <button class="foo-button mdc-button" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+                </div>
             </div>
-        </div>
-        
+
+
 
         <div class=grid-container>
             <ul class=foot1>
@@ -325,7 +346,27 @@
             </ul>
             <div class=item3>Polska</div>
         </div>
+        <script type="text/x-template" id="autocomplete-tpl">
+            <div class="autocomplete">
+                <label for="id">{{label}}</label>
+                <textarea v-if="textarea" id="id" rows="rows" cols="cols" class="autocomplete-input" placeholder="placeholder" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue"
+                          type="text"></textarea>
+                <input v-else id="id" class="autocomplete-input" placeholder="" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue" type="text">
+
+
+                <ul class="{
+        'autocomplete-list': true,
+        [id+'-list']: true
+      }" v-if="searchMatch.length > 0">
+                    <li class="{active: selectedIndex === index}" v-for="(result, index) in searchMatch" @click="selectItem(index), chooseItem()" v-html="highlightWord(result)">
+
+                    </li>
+                </ul>
+            </div>
+        </script>
+        <script src="animals.js"></script>
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="ggle2.js"></script>
 </body>
 </html>
