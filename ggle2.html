@@ -20,30 +20,30 @@
         </ul>
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="272" height="92">
         <div class="inputfield">
-            <div id="app">
-                <div class="container-item">
-                    <autocomplete/>
-                </div>
-            </div>
+            <div class="main">
+                <input v-model="inputContent" />
+                <v-autocompleter v-bind:input="inputContent" v-if="inputContent"></v-autocompleter>
+
                 <span class="FA2">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search" v-if="!inputContent"></i>
                 </span>
                 <span class="FA4">
-                    <i class="fas fa-keyboard">
-                        <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
+                    <i class="fas fa-keyboard" v-if="!inputContent">
+                        <span class="tooltip4" >Narzędzia do wprowadzania tekstu</span>
                     </i>
                 </span>
                 <span class="FA3">
-                    <i class="fas fa-microphone">
+                    <i class="fas fa-microphone" v-if="!inputContent">
                         <span class="tooltip3">Wyszukiwanie głosowe</span>
                     </i>
                 </span>
                 <div class="buttonMD1">
-                    <button class="foo-button mdc-button" onclick="window.location.href = 'google.com';">Szukaj w Google</button>
+                    <button class="foo-button mdc-button"  onclick="window.location.href = 'google.com';">Szukaj w Google</button>
                 </div>
                 <div class="buttonMD2">
-                    <button class="foo-button mdc-button" onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
+                    <button class="foo-button mdc-button"  onclick="window.location.href = 'https://www.google.com/doodles/';">Szczęśliwy traf</button>
                 </div>
+            </div>
             </div>
 
 
@@ -61,24 +61,6 @@
             </ul>
             <div class=item3>Polska</div>
         </div>
-        <script type="text/x-template" id="autocomplete-tpl">
-            <div class="autocomplete">
-                <label for="id">{{label}}</label>
-                <textarea v-if="textarea" id="id" rows="rows" cols="cols" class="autocomplete-input" placeholder="placeholder" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue"
-                          type="text"></textarea>
-                <input v-else id="id" class="autocomplete-input" placeholder="" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue" type="text">
-
-
-                <ul class="{
-        'autocomplete-list': true,
-        [id+'-list']: true
-      }" v-if="searchMatch.length > 0">
-                    <li class="{active: selectedIndex === index}" v-for="(result, index) in searchMatch" @click="selectItem(index), chooseItem()" v-html="highlightWord(result)">
-
-                    </li>
-                </ul>
-            </div>
-        </script>
         <script src="animals.js"></script>
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
