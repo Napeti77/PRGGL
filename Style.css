@@ -1,0 +1,283 @@
+﻿ .navigation {
+            display: flex;
+            justify-content: flex-end;
+            font-family: arial,sans-serif font-size:13px;
+        }
+
+            .navigation a {
+                color: rgba(0,0,0,0.87);
+                text-decoration: none;
+            }
+
+                .navigation a:visited {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                .navigation a:hover {
+                    color: inherit;
+                    text-decoration: underline;
+                }
+
+            .navigation li {
+                list-style-type: none;
+                flex-basis: 5%;
+                padding-left: 5px;
+            }
+
+        .FA1 {
+            position: absolute;
+            top: 17px;
+            opacity: .55;
+        }
+
+            .FA1:hover {
+                opacity: 1;
+            }
+
+        .FA2 {
+            color: #4285F4;
+            position: relative;
+            top: -27px;
+            right: -10px;
+        }
+
+        .FA3 {
+            color: #4285F4;
+            position: relative;
+            top: -27px;
+            right: -415px;
+        }
+
+            .FA3 .tooltip3 {
+                visibility: hidden;
+                background-color: #2D2D2D;
+                color: white;
+                text-align: center;
+                line-height: 23px;
+                font-family: arial,sans-serif;
+                font-size: 11px;
+                width: 200px;
+                height: 25px;
+                position: absolute;
+                left: -85px;
+                top: 25px;
+                z-index: 1;
+            }
+
+            .FA3:hover .tooltip3 {
+                visibility: visible;
+            }
+
+        .FA4 {
+            opacity: .55;
+            position: relative;
+            top: -27px;
+            right: -405px;
+        }
+
+            .FA4:hover {
+                opacity: 1;
+            }
+
+            .FA4 .tooltip4 {
+                visibility: hidden;
+                background-color: #2D2D2D;
+                color: white;
+                text-align: center;
+                line-height: 23px;
+                font-family: arial,sans-serif;
+                font-size: 11px;
+                width: 250px;
+                height: 25px;
+                position: absolute;
+                left: -115px;
+                top: 25px;
+                z-index: 1;
+            }
+
+            .FA4:hover .tooltip4 {
+                visibility: visible;
+            }
+
+        .butti {
+            background-color: rgb(70, 131, 234);
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            width: 95px;
+            height: 32px;
+            border-style: none;
+            position: relative;
+            top: -7px;
+            right: 27px;
+        }
+
+            .butti:hover {
+                box-shadow: 0 1px 0 rgba(0,0,0,.15);
+            }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header' 'footer1 footer1 footer2 footer2';
+            grid-gap: 0px;
+            position: fixed;
+            left: 0;
+            bottom: -17px;
+            font-family: arial,sans-serif;
+            font-size: small;
+            width: 100%;
+            height: 90px;
+            background-color: #F2F0EC;
+            border-style: solid;
+            border-color: #E4E2DF;
+            border-width: 1px;
+        }
+
+        .item3 {
+            grid-area: header;
+            color: rgba(0,0,0,.54);
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }
+
+        .foot1 {
+            grid-area: footer1;
+            width: 300px;
+            position: relative;
+            top: 5px;
+        }
+
+            .foot1 li {
+                float: left;
+                text-decoration: none;
+                list-style-type: none;
+                padding-left: 30px;
+                position: relative;
+                left: -50px;
+            }
+
+            .foot1 a {
+                text-decoration: none;
+                color: #5f6368;
+            }
+
+                .foot1 a:hover {
+                    text-decoration: underline;
+                    color: inherit;
+                }
+
+                .foot1 a:visited {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+        .foot2 {
+            grid-area: footer2;
+            width: 300px;
+            position: relative;
+            top: 5px;
+        }
+
+            .foot2 li {
+                float: left;
+                list-style-type: none;
+                padding-left: 30px;
+                position: relative;
+                right: -335px;
+            }
+
+            .foot2 a {
+                text-decoration: none;
+                color: #5f6368;
+            }
+
+                .foot2 a:hover {
+                    text-decoration: underline;
+                    color: inherit;
+                }
+
+                .foot2 a:visited {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+        .logo {
+            padding-top: 109px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .inputfield {
+            margin: 0 auto;
+            position: relative;
+            top: 18px;
+            border-style: solid;
+            border-color: #DFE1E5;
+            border-radius: 50px;
+            width: 482px;
+            height: 44px;
+        }
+
+            .inputfield:hover {
+                box-shadow: 0px 2px 4px rgba(0,0,0,.15);
+            }
+        .buttonMD1
+        {
+            position: relative;
+            right: -85px;
+        }
+         .buttonMD2
+        {
+             position: relative;
+             right: -255px;
+             top: -36px;
+        }
+        .mdc-button.foo-button
+        {
+            color: #5F6368;
+            background-color: #F2F2F2;
+            height: 36px;
+            width: 155px;
+            line-height: 27px;
+            border-style: hidden;
+            border-radius: 4px;
+            font-family: arial,sans-serif;
+            text-transform: none;
+            font-size: 14px;
+        }
+       .mdc-button.foo-button:hover{
+           background-color: #F2F2F2;
+           border-style: solid;
+           border-width: 1px;
+       }
+       .autocomplete-input{
+           position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: 85px;
+            border-style: none;
+            width: 355px;
+            height: 40px;
+       }
+        .autocomplete-input:hover {
+            outline: none;
+        }
+        .autocomplete-input:focus {
+            outline: none;
+        }
+        .autocomplete li{
+            list-style-type:none;
+        }
+        .autocomplete li:hover{
+            background-color:#EEEEEE;
+        }
+        .autocomplete ul{
+            border-style:groove;
+            border-radius: 25px;
+            max-height: 150px;
+            overflow:hidden; 
+            overflow-y:scroll;
+        }
+   
