@@ -14,14 +14,23 @@ Vue.component('v-autocompleter', {
             return results.length > 9 ? results.slice(0, 10) : results;
         }
     },
+    
+    methods: {
+        test: function (e) {
+            let el = e.target.innerHTML
+            document.getElementById("fsdsdsdsdcx").value = el
+            //alert('Hello! ' + el +" "+ this.input)
+            //this.input = przesylany ale jak zmienic ?
+        }
+    },
     template:
         `<div class="autocompleter">
           <ul class ="autocomplete-results">
              <li class="autocomplete-result"
-                   v-for="(result, i) in results" :key="i">{{ result }}</tr>
+                   v-for="(result, i) in results" :key="i" @click="test($event)">{{ result }}</li>
           </ul>
         </div>`
-})
+});
 
 new Vue({
     el: ".main",
@@ -31,4 +40,7 @@ new Vue({
             showAutocompleter: this.inputContent ? true : false
         }
     }
-})
+   
+
+
+});
