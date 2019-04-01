@@ -1,6 +1,5 @@
 // JavaScript source code
-const button = document.querySelector('.foo-button');
-mdc.ripple.MDCRipple.attachTo(button);
+
 
 Vue.component('v-autocompleter', {
     props: ["input"],
@@ -19,8 +18,6 @@ Vue.component('v-autocompleter', {
         test: function (e) {
             let el = e.target.innerHTML
             document.getElementById("fsdsdsdsdcx").value = el
-            //alert('Hello! ' + el +" "+ this.input)
-            //this.input = przesylany ale jak zmienic ?
         }
     },
     template:

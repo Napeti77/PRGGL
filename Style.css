@@ -280,4 +280,118 @@
             overflow:hidden; 
             overflow-y:scroll;
         }
-   
+        .logoscore{
+            position: relative;
+            top: -40px;
+            left: 25px;
+        }
+        .wynikin .inputfield{
+            position: absolute;
+            top: 10px;
+            left: 160px;
+        }
+        .btn .FA2{
+            background-color:white;
+            border-style:none;
+            position: relative;
+            top: -46px;
+            right: -450px;
+        }
+        .panel {
+            position: relative;
+            right: -115px;
+        }
+        .panel a{
+            color: #777777;
+            text-decoration:none;
+        }
+        .panel a:visited{
+            color:#777777;
+        }
+        .panel a:hover{
+            color:black;
+        }
+        .panel li{
+            list-style-type: none; 
+            display:inline;
+            margin: 0px 10px;
+        }
+        .active{
+            color:#1A73E8;
+            font-weight: bold;
+        }
+        .men{
+            position: relative;
+            right: -570px;
+            top: -34px;
+        }
+        .men select{
+            border-style:none;
+            color:#777777;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .man select::-ms-expand {
+            display: none;
+        }
+       .tools{
+           position: relative;
+           right: 100px;
+           border-style:none;
+           background-color:white;
+           color:#777777;
+
+       }
+       .tools:hover{
+           background-color:#F5F5F5;
+           border-style:solid;
+           border: 1px;
+           border-color:#C6C6C6;
+       }
+       #vis{
+           visibility:hidden;
+           position: relative;
+           top: 15px;
+           right: 403px;
+       }
+       .line{
+           position: relative;
+           top: -15px;
+       }
+       .temptxt{
+           color:#777777;
+           position: relative;
+           top:-10px;
+           right: -165px;
+       }
+       .lorem{
+           position: relative;
+           top:10px;
+           right: -165px;
+           font-family: arial,sans-serif;
+       }
+       .lorem a{
+           text-decoration:none;
+           font-size:large;
+       }
+       .lorem div{
+           color: #696969;
+       }
+       .greentxt{
+           color: #128737 !important;
+       }
+       .autocompleter{
+           position: relative;
+           z-index:1000;
+       }
+       .autocompleter ul{
+           position: relative;
+           z-index:1000;
+           background-color:white;
+       }
+       .autocompleter li{
+           position: relative;
+           z-index:1000;
+       }
+
+    
