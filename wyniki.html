@@ -7,17 +7,18 @@
 </head>
 <body>
     <div style="min-width: 960px; margin: 0 auto;">
-        <ul class=navigation>
-            <li><span class="FA1"><i class="fas fa-th fa-lg"></i></span></li>
-            <li>
-                <button class="butti" onclick="window.location.href = 'https://accounts.google.com/signin';">Zaloguj się</button>
-            </li>
-        </ul>
-        <img class="logoscore" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="92" height="30">
-        <div class="wynikin">
-            <div class="inputfield">
-                <div class="main">
-                    <script src="inputfield.js"></script>
+        <div class="menu2">
+            <ul class=navigation>
+                <li><span class="FA1"><i class="fas fa-th fa-lg"></i></span></li>
+                <li>
+                    <button class="butti" onclick="window.location.href = 'https://accounts.google.com/signin';">Zaloguj się</button>
+                </li>
+            </ul>
+            <img class="logoscore" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" width="92" height="30">
+            <div class="wynikin">
+                <div class="inputfield">
+                    <div class="main">
+                        <script src="inputfield.js"></script>
                         <span class="FA4">
                             <i class="fas fa-keyboard" v-if="!inputContent">
                                 <span class="tooltip4">Narzędzia do wprowadzania tekstu</span>
@@ -28,62 +29,62 @@
                                 <span class="tooltip3">Wyszukiwanie głosowe</span>
                             </i>
                         </span>
-                    <div class="btn">
-                        <button class="FA2" onclick="window.location.href = 'wyniki.html';" v-if="!inputContent"><i class="fas fa-search"></i></button>
+                        <div class="btn">
+                            <button class="FA2" onclick="window.location.href = 'wyniki.html';" v-if="!inputContent"><i class="fas fa-search"></i></button>
+                        </div>
                     </div>
-                    </div>
+                </div>
             </div>
-        </div>
 
-        <ul class="panel" >
-            <li class="active">Wszystko</li>
-            <li><a href="https://news.google.com/">Wiadomości</a></li>
-            <li><a href="https://www.google.pl/imghp">Grafika</a></li>
-            <li><a href="https://www.google.com/shopping">Zakupy</a></li>
-            <li><a href="https://www.google.pl/videohp">Filmy</a></li>
-        </ul>
-        <div class="men">
-            <select name="Wiecej" onchange="location = this.value;">
-                <option value="">Więcej</option>
-                <option value="https://books.google.pl/">Książki</option>
-                <option value="https://www.google.com/flightst">Loty</option>
-                <option value="https://www.google.com/finance">Finanse</option>
-                <option value="https://www.google.pl/maps">Mapy</option>
-            </select>
-            <select name="Ustawienia" onchange="location = this.value;">
-                <option value="">Ustawienia</option>
-                <option value="https://www.google.com/preferences">Ustawienia wyszukiwania</option>
-                <option value="https://www.google.com/preference">Języki</option>
-                <option value="https://www.google.com/">Wyłącz filtr SafeSearch</option>
-                <option value="https://www.google.com/">Ukryj wyniki prywatne</option>
-                <option value="https://www.google.com/advanced_search">Szukanie zaawansowane</option>
-                <option value="https://myactivity.google.com/privacyadvisor/search">Twoje dane w wyszukiwarce</option>
-                <option value="https://myactivity.google.com/">Historia</option>
-                <option value="https://support.google.com/websearch/">Pomoc dotycząca wyszukiwana</option>
-            </select>
-            <button onclick="visibil()" class="tools">Narzędzia</button>
-            <div id="vis">
-                <select name="lang" onchange="location = this.value;">
-                    <option value="">Dowolny Język</option>
-                    <option value="https://google.pl/">Tylko język polski</option>
+            <ul class="panel">
+                <li class="active">Wszystko</li>
+                <li><a href="https://news.google.com/">Wiadomości</a></li>
+                <li><a href="https://www.google.pl/imghp">Grafika</a></li>
+                <li><a href="https://www.google.com/shopping">Zakupy</a></li>
+                <li><a href="https://www.google.pl/videohp">Filmy</a></li>
+            </ul>
+            <div class="men">
+                <select name="Wiecej" onchange="location = this.value;">
+                    <option value="">Więcej</option>
+                    <option value="https://books.google.pl/">Książki</option>
+                    <option value="https://www.google.com/flightst">Loty</option>
+                    <option value="https://www.google.com/finance">Finanse</option>
+                    <option value="https://www.google.pl/maps">Mapy</option>
                 </select>
-                <select name="when" onchange="location = this.value;">
-                    <option value="">Kiedykolwiek</option>
-                    <option value="https://google.pl/">Ostatnia godzina</option>
-                    <option value="https://google.pl/">Ostatnie 24 godziny</option>
-                    <option value="https://google.pl/">Ostatni tydzień</option>
-                    <option value="https://google.pl/">Ostatni miesiąc</option>
-                    <option value="https://google.pl/">Ostatni rok</option>
-                    <option value="https://google.pl/">Zakres dat...</option>
+                <select name="Ustawienia" onchange="location = this.value;">
+                    <option value="">Ustawienia</option>
+                    <option value="https://www.google.com/preferences">Ustawienia wyszukiwania</option>
+                    <option value="https://www.google.com/preference">Języki</option>
+                    <option value="https://www.google.com/">Wyłącz filtr SafeSearch</option>
+                    <option value="https://www.google.com/">Ukryj wyniki prywatne</option>
+                    <option value="https://www.google.com/advanced_search">Szukanie zaawansowane</option>
+                    <option value="https://myactivity.google.com/privacyadvisor/search">Twoje dane w wyszukiwarce</option>
+                    <option value="https://myactivity.google.com/">Historia</option>
+                    <option value="https://support.google.com/websearch/">Pomoc dotycząca wyszukiwana</option>
                 </select>
-                <select name="scr" onchange="location = this.value;">
-                    <option value="">Wszystkie Wyniki</option>
-                    <option value="https://google.pl/">Dokładnie</option>
-                </select>
+                <button onclick="visibil()" class="tools">Narzędzia</button>
+                <div id="vis">
+                    <select name="lang" onchange="location = this.value;">
+                        <option value="">Dowolny Język</option>
+                        <option value="https://google.pl/">Tylko język polski</option>
+                    </select>
+                    <select name="when" onchange="location = this.value;">
+                        <option value="">Kiedykolwiek</option>
+                        <option value="https://google.pl/">Ostatnia godzina</option>
+                        <option value="https://google.pl/">Ostatnie 24 godziny</option>
+                        <option value="https://google.pl/">Ostatni tydzień</option>
+                        <option value="https://google.pl/">Ostatni miesiąc</option>
+                        <option value="https://google.pl/">Ostatni rok</option>
+                        <option value="https://google.pl/">Zakres dat...</option>
+                    </select>
+                    <select name="scr" onchange="location = this.value;">
+                        <option value="">Wszystkie Wyniki</option>
+                        <option value="https://google.pl/">Dokładnie</option>
+                    </select>
+                </div>
+
             </div>
-            
         </div>
-        <hr class="line">
         <div class="temptxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         <div class="lorem">
             <script src="loremips.js"></script>

@@ -361,12 +361,12 @@
        .temptxt{
            color:#777777;
            position: relative;
-           top:-10px;
+           top:5px;
            right: -165px;
        }
        .lorem{
            position: relative;
-           top:10px;
+           top:20px;
            right: -165px;
            font-family: arial,sans-serif;
        }
@@ -392,6 +392,9 @@
        .autocompleter li{
            position: relative;
            z-index:1000;
+       }
+       .menu2{
+           border-bottom: 1px solid #EBEBEB;
        }
 
     
