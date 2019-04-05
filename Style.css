@@ -274,9 +274,6 @@
             background-color:#EEEEEE;
         }
         .main ul{
-            border-style:groove;
-            border-radius: 25px;
-            max-height: 150px;
             overflow:hidden; 
             overflow-y:scroll;
         }
@@ -366,6 +363,7 @@
        }
        .lorem{
            position: relative;
+           z-index:1;
            top:20px;
            right: -165px;
            font-family: arial,sans-serif;
@@ -383,11 +381,15 @@
        .autocompleter{
            position: relative;
            z-index:1000;
+           border-style:groove;
+           border-radius: 25px;
+           background-color:white;
        }
        .autocompleter ul{
            position: relative;
            z-index:1000;
            background-color:white;
+           max-height: 150px;
        }
        .autocompleter li{
            position: relative;
@@ -396,5 +398,22 @@
        .menu2{
            border-bottom: 1px solid #EBEBEB;
        }
-
+       .atbuttons{
+           display: flex;
+           position: relative;
+           right: -75px;
+       }
+       .buttonMD12{
+           position: relative;
+           right:-7px;
+       }
+        .buttonMD22{
+            position: relative;
+            right: -21px;
+       }
+        .menu2 .atbuttons{
+            display:none;
+        }
+     
+ 
     

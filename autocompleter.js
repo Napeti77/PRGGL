@@ -26,6 +26,14 @@ Vue.component('v-autocompleter', {
              <li class="autocomplete-result"
                    v-for="(result, i) in results" :key="i" @click="test($event)">{{ result }}</li>
           </ul>
+          <div class=atbuttons>
+          <div class ="buttonMD12">
+                    <button class ="foo-button mdc-button"  onclick="window.location.href = 'wyniki.html';">Szukaj w Google</button>
+                </div>
+                <div class ="buttonMD22">
+                    <button class ="foo-button mdc-button"  onclick="window.location.href = 'wyniki.html';">Szczesliwy traf</button>
+                </div>
+           </div>
         </div>`
 });
 
