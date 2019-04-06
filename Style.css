@@ -287,13 +287,6 @@
             top: 10px;
             left: 160px;
         }
-        .btn .FA2{
-            background-color:white;
-            border-style:none;
-            position: relative;
-            top: -46px;
-            right: -450px;
-        }
         .panel {
             position: relative;
             right: -115px;
@@ -384,6 +377,7 @@
            border-style:groove;
            border-radius: 25px;
            background-color:white;
+           visibility: visible;
        }
        .autocompleter ul{
            position: relative;
@@ -414,6 +408,25 @@
         .menu2 .atbuttons{
             display:none;
         }
+        .btn .FA2{
+            background-color:white;
+            border-style:none;
+            position: relative;
+            top: -46px;
+            right: -445px;
+        }
+        .iconss .FA4{
+            position: relative;
+            top: -27px;
+            right: -395px;
+        }
+        .iconss .FA3{
+            position: relative;
+            top: -27px;
+            right: -405px;
+        }
+
+  
      
  
     
