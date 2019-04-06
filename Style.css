@@ -287,29 +287,7 @@
             top: 10px;
             left: 160px;
         }
-        .panel {
-            position: relative;
-            right: -115px;
-        }
-        .panel a{
-            color: #777777;
-            text-decoration:none;
-        }
-        .panel a:visited{
-            color:#777777;
-        }
-        .panel a:hover{
-            color:black;
-        }
-        .panel li{
-            list-style-type: none; 
-            display:inline;
-            margin: 0px 10px;
-        }
-        .active{
-            color:#1A73E8;
-            font-weight: bold;
-        }
+  
         .men{
             position: relative;
             right: -570px;
@@ -348,26 +326,7 @@
            position: relative;
            top: -15px;
        }
-       .temptxt{
-           color:#777777;
-           position: relative;
-           top:5px;
-           right: -165px;
-       }
-       .lorem{
-           position: relative;
-           z-index:1;
-           top:20px;
-           right: -165px;
-           font-family: arial,sans-serif;
-       }
-       .lorem a{
-           text-decoration:none;
-           font-size:large;
-       }
-       .lorem div{
-           color: #696969;
-       }
+      
        .greentxt{
            color: #128737 !important;
        }
@@ -425,6 +384,53 @@
             top: -27px;
             right: -405px;
         }
+             .panel {
+            position: relative;
+            right: -115px;
+        }
+        .panel a{
+            color: #777777;
+            text-decoration:none;
+        }
+        .panel a:visited{
+            color:#777777;
+        }
+        .panel a:hover{
+            color:black;
+        }
+        .panel li{
+            list-style-type: none; 
+            display:inline;
+            margin: 0px 10px;
+        }
+        .active a{
+            color:#1A73E8 !important;
+            font-weight: bold;
+        }
+       .temptxt{
+           color:#777777;
+           position: relative;
+           right: 5px;
+           top: -15px;
+           font-size: small;
+       }
+       .lorem{
+           position: relative;
+           z-index:1;
+           top:20px;
+           right: -165px;
+           font-size: small;
+           font-family: arial,sans-serif;
+       }
+       .lorem a{
+           text-decoration:none;
+           font-size:large;
+       }
+       .lorem p{
+           color: #696969;
+           line-height: 50%;
+       }
+
 
   
      

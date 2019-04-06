@@ -1,5 +1,9 @@
 document.write('\
 \
+    <div class="temptxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>\
+\
+     <div class="lorem">\
+\
     <a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>\
 \
     <div class="greentxt">Nam mattis, massa ut mattis ultricies, risus mauris pharetra urna, nec tempus </div>\
@@ -13,5 +17,5 @@ document.write('\
     <br>\
 \
     <br>\
-\
+
 ');
